@@ -1,0 +1,17 @@
+{
+  "name": "serveur_js",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Yccele <yccele@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Yccele/Javascript-Annuaire",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

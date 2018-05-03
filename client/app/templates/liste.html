@@ -1,0 +1,7 @@
+<div class="container">
+	<h1>Accueil</h1>
+	<h3>Liste des Photons</h3>
+	<ul>
+		<li class="pointer" ui-sref="infos({id: photon.id})" ng-repeat="photon in maliste">{{photon.id}} - {{photon.name}}</li>
+	</ul>
+</div>

@@ -1,0 +1,38 @@
+<!-- <div class="container">
+	<div class="col-sm-6">
+		<h1>Infos Photon</h1>
+		<ul>
+			<li ng-repeat="(key, info) in photon">{{key}} : {{info}}</li>
+		</ul>
+	</div>
+
+
+	<div class="col-sm-6">
+		<button  class="btn" ng-class="btn" ng-click="led(ledstatut)" type="radio">{{ ledstatut }}</button>
+	</div>
+
+</div>
+
+<a ui-sref="home">Retour liste</a>
+<a ui-sref="events({id: photon_id})">Events</a> -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <h1>Infos Photon</h1>
+            <ul class="list-group">
+                <li ng-repeat="(key, info) in photon" class="list-group-item d-flex justify-content-between align-items-center">{{key}} : {{info}}</li>
+            </ul>
+        </div>
+
+
+        <div class="col-sm-6">
+            <button  class="btn" ng-class="btn" ng-click="led(ledstatut)" type="radio">{{ ledstatut }}</button>
+        </div>
+    </div>
+
+    <a ui-sref="events({id: photon_id})">Events</a>
+</div>
+
+
+

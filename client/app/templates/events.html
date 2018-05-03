@@ -1,0 +1,27 @@
+<div class="container">
+<h1 style="text-align: center;">Information Capteur</h1>
+<zingchart id="myChart" zc-json="myJson" zc-height=500 zc-width=1200></zingchart>
+<h1 style="text-align: center;">Events</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>data</th>
+                <th>Published at</th>
+                <th>Core id</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="event in evenements | orderBy: '-_id'">
+                <td>{{event._id}}</td>
+                <td>{{event.data}}</td>
+                <td>{{event.published_at}}</td>
+                <td>{{event.coreid}}</td>
+                <td>{{event.name}}</td>
+            </tr>
+        </tbody>
+    </table>
+		<a ui-sref="home">Retour liste</a>
+		<a ui-sref="infos({id: photon_id})">Retour Photon</a>
+</div>
